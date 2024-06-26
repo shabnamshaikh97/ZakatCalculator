@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            background-image: url("C:\Users\shabn\OneDrive\Desktop\zakatbg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .container{
+            max-width: 400px;
+            margin: auto;
+            background-color: rgb(137, 89, 160);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(63, 28, 100);
+        }
+        h1{
+            text-align: center;
+            color: #f8efef;
+        }
+        .form-group{
+            margin-bottom: 5px;
+        
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="number"],input[type="text"]{
+            width: 80%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="sumbit"]{
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: #4caf50;
+
+            font-size: 16px;
+           
+        }
+        input[type="submit"]:single-button{
+            background-color: #10ec1b;
+        }
+        .result{
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border:1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Zakat Calculator</h1>
+        <form id="zakatForm" action="#" method="post">
+            <div class="form-group">
+                <label for="goldValue">Value of gold(in grams):</label>
+                <input type="number" id="goldValue" name="goldValue" required>
+            </div>
+            <div class="form-group">
+                <label for="silverValue">Value of silver(in grams):</label>
+                <input type="number" id="silverValue" name="silverValue" required>
+            </div>
+            <div class="form-group">
+                <label for="cashAmount">Cash amount:</label>
+                <input type="number" id="cashAmount" name="cashAmount" required>
+            </div>
+            <center>
+            <input type="submit" value="Calculate Zakat">
+        </center>
+
+        </form>
+        <div id="result" class="result"></div>
+        <script src="script.js"></script>
+
+</div>
+</body>
+</html>
